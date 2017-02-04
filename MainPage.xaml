@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="BrownHackathon.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BrownHackathon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="Accept" Label="appbarbutton"/>
+            <AppBarButton Icon="Cancel" Label="appbarbutton"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+
+    <TextBox x:Name="Input" HorizontalAlignment="Center" TextWrapping="Wrap" Text=""  Margin="139,229,189,391" Header="Input"  Width="312" RenderTransformOrigin="0.5,0.5" PlaceholderText="Place input here" MaxHeight="200" MaxWidth="350" FontFamily="Calibri" ScrollViewer.VerticalScrollBarVisibility="Auto" KeyDown="OnEnter"/>
+</Page>
